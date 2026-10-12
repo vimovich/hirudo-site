@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<include src="partials/head.html"></include>
+<title>Контакты — запросить прайс на медицинских пиявок | HIRUDO TRADE</title>
+<meta name="description" content="Телефон, адрес в Ташкенте и форма заявки на поставку медицинских пиявок оптом.">
+</head>
+<body data-page="contacts">
+<include src="partials/header.html" page="contacts"></include>
+
+<main>
+  <section class="phero" style="padding-bottom:clamp(48px,6vw,80px)">
+    <div class="container phero__in" style="padding-bottom:0">
+      <div class="phero__title">
+        <nav class="crumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>Контакты</span></nav>
+        <h1 class="h1 split">Запросите <em>прайс</em> и условия поставки</h1>
+      </div>
+      <p class="lead" data-reveal>Отвечаем в течение рабочего дня. Срочные отгрузки — звоните напрямую.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact">
+      <dl class="cinfo" data-reveal="children">
+        <div><dt>Телефон · WhatsApp · Telegram</dt><dd><a class="big" href="tel:+998946140241">+998 94 614 02 41</a><button class="copy-btn" type="button" data-copy="+998946140241">Копировать</button></dd></div>
+        <div><dt>Адрес</dt><dd>Узбекистан, г. Ташкент, Чиланзарский район, массив Чиланзар-Е, дом 1, офис 47</dd></div>
+        <div><dt>Часы работы</dt><dd>Пн–Сб, 9:00–18:00 (Ташкент, UTC+5)</dd></div>
+        <div><dt>Языки</dt><dd>Русский, узбекский, английский</dd></div>
+        <div><dt>ИНН</dt><dd>302155304</dd></div>
+      </dl>
+
+      <div class="form-card" id="quote" data-reveal>
+        <div style="display:grid;gap:14px">
+          <p class="eyebrow">Заявка</p>
+          <h2 class="h2" style="font-size:clamp(1.8rem,3vw,2.6rem)">Расчёт партии</h2>
+        </div>
+        <form class="form" data-lead novalidate>
+          <div class="form__row">
+            <label class="field" for="f-name"><span>Имя</span><input id="f-name" name="name" required autocomplete="name" placeholder="Как к вам обращаться"></label>
+            <label class="field" for="f-org"><span>Организация</span><input id="f-org" name="org" autocomplete="organization" placeholder="Клиника, компания"></label>
+          </div>
+          <div class="form__row">
+            <label class="field" for="f-contact"><span>Телефон или e-mail</span><input id="f-contact" name="contact" required placeholder="+1 … или name@clinic.com"></label>
+            <label class="field" for="f-qty"><span>Количество, шт.</span><input id="f-qty" name="qty" type="number" min="25" step="25" placeholder="например, 500"></label>
+          </div>
+          <div class="field">
+            <span>Страна доставки</span>
+            <div class="seg">
+              <input type="radio" name="country" id="c-us" value="США" checked><label for="c-us">США</label>
+              <input type="radio" name="country" id="c-ca" value="Канада"><label for="c-ca">Канада</label>
+              <input type="radio" name="country" id="c-il" value="Израиль"><label for="c-il">Израиль</label>
+              <input type="radio" name="country" id="c-uz" value="Узбекистан"><label for="c-uz">Узбекистан</label>
+              <input type="radio" name="country" id="c-xx" value="Другая"><label for="c-xx">Другая</label>
+            </div>
+          </div>
+          <div class="field">
+            <span>Фракция</span>
+            <div class="seg">
+              <input type="radio" name="fraction" id="fr-s" value="S"><label for="fr-s">S · 0,5–1 г</label>
+              <input type="radio" name="fraction" id="fr-m" value="M" checked><label for="fr-m">M · 1–2 г</label>
+              <input type="radio" name="fraction" id="fr-l" value="L"><label for="fr-l">L · 2–3,5 г</label>
+              <input type="radio" name="fraction" id="fr-x" value="Несколько"><label for="fr-x">Несколько</label>
+            </div>
+          </div>
+          <label class="field" for="f-msg"><span>Комментарий</span><textarea id="f-msg" name="msg" placeholder="Регулярность поставок, сроки, требования к документам"></textarea></label>
+          <div class="form__foot">
+            <small>Нажимая кнопку, вы соглашаетесь на обработку контактных данных для ответа на заявку.</small>
+            <button class="pill pill--dark" type="submit"><span>Отправить заявку</span><i class="pill__arrow" aria-hidden="true"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<include src="partials/footer.html"></include>
+</body>
+</html>
