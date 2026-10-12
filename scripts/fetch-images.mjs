@@ -2,7 +2,7 @@
 // Sources: Pixabay (Pixabay Content License) and Pexels (Pexels License) — free for commercial use.
 import { mkdir, writeFile, access } from 'fs/promises';
 
-const px = (id) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=2000`;
+const px = (id) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1600`;
 
 const images = {
   'leech-skin.jpg': 'https://cdn.pixabay.com/photo/2015/11/21/19/32/leech-1055447_1280.jpg',
